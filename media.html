@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Multimedia & Embedding</h1>
+
+    <picture>
+      <source media="(max-width: 500px)" srcset="assets/lqimage.jpeg" />
+      <!-- <figure>
+            <img
+              src="assets/myView.png"
+              alt="myView"
+              title="Main Background"
+            />
+            <figcaption>this is the main background image in this website</figcaption>
+          </figure> -->
+      <img src="assets/image/myView.png" alt="Main Image" />
+    </picture>
+
+    <video
+      controls
+      autoplay
+      loop
+      muted
+      preload="none"
+      poster="assets/image/hdimage.jpg"
+      src="assets/video/video.mp4"
+      width="100%"
+
+      track
+      src="assets/substitles/sample.vtt"
+      label="English"
+      kind="substitles"
+      srclang="es"
+      default
+    ></video>
+  </body>
+</html>
