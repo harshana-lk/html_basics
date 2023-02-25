@@ -1,43 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Document</title>
-  </head>
-  <body>
-    <h1>Multimedia & Embedding</h1>
+</head>
+<body>
+<h1>Multimedia & Embedding</h1>
 
-    <picture>
-      <source media="(max-width: 500px)" srcset="assets/lqimage.jpeg" />
-      <!-- <figure>
-            <img
-              src="assets/myView.png"
-              alt="myView"
-              title="Main Background"
-            />
-            <figcaption>this is the main background image in this website</figcaption>
-          </figure> -->
-      <img src="assets/image/myView.png" alt="Main Image" />
-    </picture>
+<picture>
+    <source media="(max-width: 500px)" srcset="assets/image/lqimage.jpeg"/>
+    <!-- <figure>
+          <img
+            src="assets/myView.png"
+            alt="myView"
+            title="Main Background"
+          />
+          <figcaption>this is the main background image in this website</figcaption>
+        </figure> -->
+    <img alt="Main Image" src="assets/image/myView.png"/>
+</picture>
 
-    <video
-      controls
-      autoplay
-      loop
-      muted
-      preload="none"
-      poster="assets/image/hdimage.jpg"
-      src="assets/video/video.mp4"
-      width="100%"
+<video
+        autoplay
+        controls
+        loop
+        muted
+        poster="assets/image/hdimage.jpg"
+        preload="none"
+        width="100%"
+>
+    <source src="assets/video/video.mp4" type="video/mp4"/>
+    <track
+            default
+            kind="subtitles"
+            label="English"
+            src="assets/substitles/sample.vtt"
+            srclang="es"
+    />
+</video>
 
-      track
-      src="assets/substitles/sample.vtt"
-      label="English"
-      kind="substitles"
-      srclang="es"
-      default
-    ></video>
-  </body>
+<audio controls preload="auto">
+    <source
+            src="assets/audio/Cosmonkey - Old Sneakers.mp3"
+            type="audio/mp3"
+    />
+</audio>
+
+<iframe
+        height="1920"
+        src="https://www.doenets.lk/"
+        title="iframe Example 1"
+        width="100%"
+>
+</iframe>
+
+<iframe
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        frameborder="0"
+        height="315"
+        src="https://www.youtube.com/embed/dmOpdn-8qzY"
+        title="YouTube video player"
+        width="560"
+></iframe>
+
+
+</body>
 </html>
