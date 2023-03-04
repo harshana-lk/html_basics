@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Table Header</p>
+    <table border="2">
+      <col span="2" />
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+      </tr>
+      <tr>
+        <td>Harshana</td>
+        <td>Jayaweera</td>
+      </tr>
+      <tr>
+        <td>Nethsara</td>
+        <td>Siyum</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+
+    <table border="1">
+      <thead>
+        <th id="name">Name</th>
+        <th id="it" colspan="2">Tel</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th id="stName">Harshana</th>
+          <td headers="Java stName">0778380325</td>
+          <td headers="Java stName">0778380325</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <br />
+    <br />
+
+    <table border="1">
+      <thead>
+        <th id="id">ID</th>
+        <th id="name">Name</th>
+        <th id="email" colspan="2" rowspan="2">Emails</th>
+        <th id="pName" rowspan="2">Parents Name</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th id="id01">1</th>
+          <td headers="Name id01">Harshana</td>
+          <td headers="Emails id01 ">harshanajayaweerayt@gmail.com</td>
+          <td headers="Emails id01 ">harshanajayaweerayt@gmail.com</td>
+          <td headers="pName Name id01 ">Henry</td>
+        </tr>
+
+        <tr>
+          <th id="id02">2</th>
+          <td headers="Name id02">Harshana</td>
+          <td headers="Emails id02 ">harshanajayaweerayt@gmail.com</td>
+          <td headers="Emails id02 ">harshanajayaweerayt@gmail.com</td>
+          <td headers="pName id02 ">Henry</td>
+        </tr>
+
+        <tr>
+          <th id="id03">3</th>
+          <td headers="Name id03">Harshana</td>
+          <td headers="Emails id03 " colspan="2">
+            harshanajayaweerayt@gmail.com
+          </td>
+          <td headers="pName id03 " rowspan="2">Henry</td>
+        </tr>
+
+        <tr>
+          <th id="id04">4</th>
+          <td headers="Name id04">Harshana</td>
+          <td headers="Emails id04 ">harshanajayaweerayt@gmail.com</td>
+          <td headers="Emails id04 ">harshanajayaweerayt@gmail.com</td>
+        </tr>
+
+        <tr>
+          <th id="id05">5</th>
+          <td headers="Name id05">Harshana</td>
+          <td headers="Emails id05 " colspan="2" rowspan="2">
+            harshanajayaweerayt@gmail.com
+          </td>
+          <td headers="pName id05 " rowspan="2">Henry</td>
+        </tr>
+
+        <tr>
+          <th id="id06">6</th>
+          <td headers="Name id06">Harshana</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
